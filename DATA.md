@@ -1,0 +1,5 @@
+# Data usage
+
+This app does not use any Backlit data namespace (window.backlit.data / userdata / records / capture) and does not use browser storage (no localStorage or indexedDB). It is entirely stateless: all answers live in an in-memory JavaScript object for the duration of the browser session only, and nothing is persisted. Closing or refreshing the page clears everything.
+
+The app attempts one outbound network call, a client-side `fetch` to `https://api.anthropic.com/v1/messages`, to generate an AI-written guidance narrative. This call carries no API key in the shipped code, so on a plain static host (including GitHub Pages) it will fail — this is expected. When it fails, the app automatically falls back to a fully offline, rule-based plain-English summary instead of showing an error, so the app remains fully usable without any network dependency. The deterministic "Full pension forecast" calculator — all the pension maths and the figures shown in the results panel — always runs entirely client-side regardless of network access.
