@@ -3,173 +3,250 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cairn — Scottish Pension & Retirement Guidance</title>
-<meta name="description" content="Free, plain-English guidance on pensions in Scotland: State Pension forecasts, workplace and Police Scotland pensions, tax relief, pot projections, income options and beneficiaries. Educational guidance, not regulated advice.">
-<meta name="robots" content="index, follow">
+<title>Scottish Pension Forecast Calculator & Retirement Guide | CAS</title>
+<meta name="description" content="Free pension guidance for people in Scotland: forecast your retirement income after Scottish income tax, check State Pension and NI years, and see your earliest sustainable retirement age. Educational only.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://stirlingcraig-cyber.github.io/Scottish-Pension-Aid-and-Retirement-Assistant/">
-
-<!-- Social sharing previews (Facebook, LinkedIn, Slack, etc.) -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#211F2E">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Cairn">
-<meta property="og:title" content="Cairn — Scottish Pension & Retirement Guidance">
-<meta property="og:description" content="Free, plain-English guidance on pensions in Scotland: State Pension, tax relief, pot projections, income options and beneficiaries.">
-<meta property="og:url" content="https://stirlingcraig-cyber.github.io/Scottish-Pension-Aid-and-Retirement-Assistant/">
+<meta property="og:site_name" content="CAS Pension Guidance">
 <meta property="og:locale" content="en_GB">
-
-<!-- Twitter/X card -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cairn — Scottish Pension & Retirement Guidance">
-<meta name="twitter:description" content="Free, plain-English guidance on pensions in Scotland: State Pension, tax relief, pot projections, income options and beneficiaries.">
-
-<!-- Structured data so search engines understand what this site is -->
+<meta property="og:title" content="Scottish Pension Forecast Calculator & Retirement Guide | CAS">
+<meta property="og:description" content="Free pension guidance for people in Scotland: forecast your retirement income after Scottish income tax, check State Pension and NI years, and see your earliest sustainable retirement age. Educational only.">
+<meta property="og:url" content="https://stirlingcraig-cyber.github.io/Scottish-Pension-Aid-and-Retirement-Assistant/">
+<meta property="og:image" content="https://stirlingcraig-cyber.github.io/Scottish-Pension-Aid-and-Retirement-Assistant/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="CAS - Pension Guidance for Scotland">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Scottish Pension Forecast Calculator & Retirement Guide | CAS">
+<meta name="twitter:description" content="Free pension guidance for people in Scotland: forecast your retirement income after Scottish income tax, check State Pension and NI years, and see your earliest sustainable retirement age. Educational only.">
+<meta name="twitter:image" content="https://stirlingcraig-cyber.github.io/Scottish-Pension-Aid-and-Retirement-Assistant/og-image.png">
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "Cairn",
-  "alternateName": "Scottish Pension Aid and Retirement Assistant",
-  "url": "https://stirlingcraig-cyber.github.io/Scottish-Pension-Aid-and-Retirement-Assistant/",
-  "description": "Free, plain-English guidance on pensions in Scotland: State Pension forecasts, workplace and Police Scotland pensions, tax relief, pot projections, income options and beneficiaries.",
-  "applicationCategory": "FinanceApplication",
-  "operatingSystem": "Any",
-  "isAccessibleForFree": true,
-  "areaServed": {
-    "@type": "Country",
-    "name": "Scotland"
-  },
-  "audience": {
-    "@type": "Audience",
-    "audienceType": "People planning retirement in Scotland"
-  }
-}
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"https://stirlingcraig-cyber.github.io/Scottish-Pension-Aid-and-Retirement-Assistant/#website","url":"https://stirlingcraig-cyber.github.io/Scottish-Pension-Aid-and-Retirement-Assistant/","name":"CAS - Pension Guidance for Scotland","inLanguage":"en-GB"},
+{"@type":"WebApplication","@id":"https://stirlingcraig-cyber.github.io/Scottish-Pension-Aid-and-Retirement-Assistant/#app","url":"https://stirlingcraig-cyber.github.io/Scottish-Pension-Aid-and-Retirement-Assistant/","name":"CAS - Pension Guidance for Scotland","description":"Free pension guidance for people in Scotland: forecast your retirement income after Scottish income tax, check State Pension and NI years, and see your earliest sustainable retirement age. Educational only.","applicationCategory":"FinanceApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript","inLanguage":"en-GB","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"audience":{"@type":"Audience","geographicArea":{"@type":"AdministrativeArea","name":"Scotland"}}}
+]}
 </script>
-
-<!-- Replace this with the verification tag Google Search Console gives you -->
-<!-- <meta name="google-site-verification" content="PASTE-YOUR-CODE-HERE"> -->
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#26241F;
-    --ink-soft:rgba(38,36,31,0.64);
-    --ink-faint:rgba(38,36,31,0.40);
-    --paper:#EFEDE2;
-    --paper-raised:#FAF9F2;
+    --ink:#211F2E;
+    --ink-soft:rgba(33,31,46,0.64);
+    --ink-faint:rgba(33,31,46,0.40);
+    --paper:#F2EFE6;
+    --paper-raised:#FFFFFF;
     --heather:#6E5480;
-    --heather-deep:#544064;
-    --heather-soft:rgba(110,84,128,0.13);
-    --moss:#4B5D45;
-    --rule:rgba(38,36,31,0.16);
-    --rule-soft:rgba(38,36,31,0.07);
+    --heather-deep:#463455;
+    --heather-bright:#8A67A0;
+    --heather-soft:rgba(110,84,128,0.12);
+    --gold:#B8894A;
+    --gold-deep:#8F6530;
+    --gold-soft:rgba(184,137,74,0.14);
+    --moss:#3F5A44;
+    --moss-soft:rgba(63,90,68,0.13);
+    --rule:rgba(33,31,46,0.14);
+    --rule-soft:rgba(33,31,46,0.06);
     --support:#5C4A1E;
     --support-bg:#F2EAD3;
     --support-border:#D2BE86;
     --scam:#7A2E2A;
     --scam-bg:#F5E2DE;
     --scam-border:#D8A79C;
+    --good:#2E5F42;
+    --good-bg:#E1EFE3;
+    --good-border:#A9CBB2;
+    --shadow-sm:0 1px 2px rgba(33,31,46,0.06);
+    --shadow-md:0 6px 20px rgba(33,31,46,0.09), 0 1px 2px rgba(33,31,46,0.06);
+    --shadow-lg:0 16px 40px rgba(33,31,46,0.14), 0 2px 6px rgba(33,31,46,0.08);
     --serif:'Fraunces', Georgia, serif;
     --sans:'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   body{
-    background:var(--paper);
+    background:
+      radial-gradient(1100px 520px at 12% -8%, rgba(110,84,128,0.16), transparent 60%),
+      radial-gradient(900px 480px at 108% 6%, rgba(184,137,74,0.14), transparent 55%),
+      var(--paper);
     color:var(--ink);
     font-family:var(--sans);
     -webkit-font-smoothing:antialiased;
     min-height:100vh;
   }
   .app-shell{
-    max-width:720px;
+    max-width:760px;
     margin:0 auto;
-    padding:48px 24px 150px;
+    padding:0 24px 150px;
   }
   header.masthead{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    border-bottom:1px solid var(--rule);
-    padding-bottom:20px;
-    margin-bottom:36px;
+    gap:20px;
+    margin:0 -24px 40px;
+    padding:26px 24px 34px;
+    background:linear-gradient(135deg, var(--ink) 0%, #2E2A42 52%, var(--heather-deep) 100%);
+    color:var(--paper-raised);
+    position:relative;
+    overflow:hidden;
+    box-shadow:var(--shadow-md);
   }
-  .brand{ display:flex; align-items:center; gap:12px; }
-  .cairn-mark{ display:flex; flex-direction:column; align-items:center; gap:2px; }
-  .cairn-mark span{ display:block; background:var(--heather); border-radius:2px; }
-  .cairn-mark span:nth-child(1){ width:18px; height:5px; }
-  .cairn-mark span:nth-child(2){ width:13px; height:5px; }
-  .cairn-mark span:nth-child(3){ width:8px; height:5px; }
+  header.masthead::before{
+    content:"";
+    position:absolute; inset:0;
+    background:
+      radial-gradient(420px 200px at 88% -20%, rgba(184,137,74,0.35), transparent 65%),
+      radial-gradient(360px 220px at 6% 120%, rgba(110,84,128,0.45), transparent 60%);
+    pointer-events:none;
+  }
+  header.masthead .peaks{
+    position:absolute; left:0; right:0; bottom:0; height:46px;
+    opacity:0.55;
+    pointer-events:none;
+  }
+  .brand{ display:flex; align-items:center; gap:13px; position:relative; z-index:1; }
+  .cairn-mark{ display:flex; flex-direction:column; align-items:center; gap:3px; }
+  .cairn-mark span{ display:block; background:linear-gradient(135deg, var(--gold) 0%, #D9AE72 100%); border-radius:2px; box-shadow:0 1px 3px rgba(0,0,0,0.25); }
+  .cairn-mark span:nth-child(1){ width:22px; height:6px; }
+  .cairn-mark span:nth-child(2){ width:16px; height:6px; }
+  .cairn-mark span:nth-child(3){ width:9px; height:6px; }
   header.masthead h1{
     font-family:var(--serif);
     font-weight:600;
-    font-size:27px;
+    font-size:30px;
     margin:0;
     letter-spacing:0.2px;
-    color:var(--ink);
+    color:var(--paper-raised);
   }
   header.masthead .tag{
     font-size:13px;
-    color:var(--ink-soft);
+    color:rgba(255,255,255,0.72);
     font-style:italic;
     font-family:var(--serif);
+    position:relative; z-index:1;
   }
   .intro{
     color:var(--ink-soft);
     font-size:15.5px;
     line-height:1.6;
     max-width:56ch;
-    margin-bottom:32px;
+    margin-bottom:28px;
   }
 
-  /* --- Home: waypoints list --- */
-  .waypoints{ border-top:1px solid var(--rule); }
-  .waypoint-row{
+  /* --- Home: hero calculator card --- */
+  .hero-card{
     display:flex;
     align-items:center;
-    justify-content:space-between;
     gap:20px;
-    padding:22px 12px;
-    border-bottom:1px solid var(--rule);
+    width:100%;
+    text-align:left;
+    font-family:inherit;
     cursor:pointer;
-    background:transparent;
-    border-left:none; border-right:none; border-top:none;
+    border:none;
+    border-radius:16px;
+    padding:26px 26px;
+    margin-bottom:34px;
+    background:linear-gradient(120deg, var(--heather-deep) 0%, var(--heather) 62%, #7A5C8D 100%);
+    color:var(--paper-raised);
+    box-shadow:var(--shadow-lg);
+    position:relative;
+    overflow:hidden;
+    transition:transform 160ms ease, box-shadow 160ms ease;
+  }
+  .hero-card::after{
+    content:"";
+    position:absolute; inset:0;
+    background:radial-gradient(280px 180px at 90% 0%, rgba(184,137,74,0.4), transparent 70%);
+    pointer-events:none;
+  }
+  .hero-card:hover{ transform:translateY(-2px); box-shadow:0 20px 46px rgba(33,31,46,0.22), 0 2px 6px rgba(33,31,46,0.1); }
+  .hero-card:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+  .hero-icon{
+    flex-shrink:0;
+    width:56px; height:56px;
+    border-radius:14px;
+    background:rgba(255,255,255,0.14);
+    border:1px solid rgba(255,255,255,0.28);
+    display:flex; align-items:center; justify-content:center;
+    position:relative; z-index:1;
+  }
+  .hero-icon svg{ width:28px; height:28px; }
+  .hero-copy{ display:flex; flex-direction:column; gap:4px; flex:1; min-width:0; position:relative; z-index:1; }
+  .hero-eyebrow{
+    font-size:11.5px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase;
+    color:#F0D9AE;
+  }
+  .hero-title{ font-family:var(--serif); font-size:23px; font-weight:600; }
+  .hero-desc{ font-size:14px; line-height:1.5; color:rgba(255,255,255,0.82); max-width:48ch; }
+  .hero-cta{
+    flex-shrink:0;
+    font-size:13.5px;
+    font-weight:600;
+    background:var(--gold);
+    color:#2B1E0B;
+    padding:10px 16px;
+    border-radius:999px;
+    white-space:nowrap;
+    position:relative; z-index:1;
+    box-shadow:0 4px 12px rgba(184,137,74,0.4);
+  }
+
+  .section-heading{
+    font-family:var(--sans);
+    font-size:12.5px;
+    font-weight:600;
+    color:var(--ink-soft);
+    letter-spacing:0.05em;
+    margin:0 0 14px;
+    text-transform:uppercase;
+  }
+
+  /* --- Home: topic cards --- */
+  .waypoints{ display:flex; flex-direction:column; gap:10px; }
+  .way-card{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    padding:16px 18px;
+    border:1px solid var(--rule);
+    border-radius:12px;
+    cursor:pointer;
+    background:var(--paper-raised);
     text-align:left;
     width:100%;
     font-family:inherit;
-    border-radius:6px;
-    transition:background 120ms ease;
+    box-shadow:var(--shadow-sm);
+    transition:transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
   }
-  .waypoint-row:hover{ background:var(--rule-soft); }
-  .waypoint-row:focus-visible{ outline:2px solid var(--heather); outline-offset:2px; }
-  .waypoint-row.waypoint-featured{ background:var(--heather-soft); }
-  .waypoint-row .entry-text h3{
+  .way-card:hover{ transform:translateY(-1px); box-shadow:var(--shadow-md); border-color:var(--heather); }
+  .way-card:focus-visible{ outline:2px solid var(--heather); outline-offset:2px; }
+  .way-icon{
+    flex-shrink:0;
+    width:42px; height:42px;
+    border-radius:10px;
+    background:var(--heather-soft);
+    color:var(--heather-deep);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .way-icon svg{ width:21px; height:21px; }
+  .way-text{ display:flex; flex-direction:column; gap:3px; flex:1; min-width:0; }
+  .way-title{
     font-family:var(--serif);
-    font-size:19px;
+    font-size:16.5px;
     font-weight:600;
-    margin:0 0 4px;
+    color:var(--ink);
   }
-  .feature-badge{
-    display:inline-block;
-    margin-left:8px;
-    font-size:11px;
-    font-family:var(--sans);
-    font-weight:600;
-    background:var(--heather);
-    color:var(--paper-raised);
-    padding:2px 9px;
-    border-radius:999px;
-    vertical-align:middle;
-  }
-  .waypoint-row .entry-text p{
-    margin:0;
-    font-size:14px;
+  .way-desc{
+    font-size:13.5px;
     color:var(--ink-soft);
-    line-height:1.5;
-    max-width:44ch;
+    line-height:1.45;
   }
-  .entry-arrow{
+  .way-arrow{
     font-family:var(--serif);
-    font-size:20px;
+    font-size:18px;
     color:var(--heather);
     flex-shrink:0;
   }
@@ -199,9 +276,9 @@
   .card{
     background:var(--paper-raised);
     border:1px solid var(--rule);
-    border-radius:10px;
+    border-radius:16px;
     padding:36px 32px;
-    box-shadow:0 1px 0 rgba(38,36,31,0.03);
+    box-shadow:var(--shadow-md);
   }
   .card:focus{ outline:none; }
   .card .eyebrow-row{
@@ -234,18 +311,19 @@
     padding:14px 16px;
     border:1px solid var(--rule);
     background:var(--paper-raised);
-    border-radius:6px;
+    border-radius:10px;
     font-family:var(--sans);
     font-size:15px;
     color:var(--ink);
     cursor:pointer;
     transition:border-color 120ms ease, background 120ms ease;
   }
-  .option-btn:hover{ border-color:var(--heather); }
+  .option-btn:hover{ border-color:var(--heather); box-shadow:var(--shadow-sm); }
   .option-btn:focus-visible{ outline:2px solid var(--heather); outline-offset:2px; }
   .option-btn.selected{
     border-color:var(--heather);
     background:var(--heather-soft);
+    box-shadow:inset 0 0 0 1px var(--heather);
   }
 
   input[type="text"], input[type="date"], textarea, select{
@@ -255,7 +333,7 @@
     color:var(--ink);
     padding:13px 14px;
     border:1px solid var(--rule);
-    border-radius:6px;
+    border-radius:10px;
     background:var(--paper-raised);
     margin-bottom:8px;
   }
@@ -263,6 +341,7 @@
   input[type="text"]:focus, input[type="date"]:focus, textarea:focus, select:focus{
     outline:none;
     border-color:var(--heather);
+    box-shadow:0 0 0 3px var(--heather-soft);
   }
 
   .field-hint{
@@ -300,19 +379,23 @@
   .btn{
     font-family:var(--sans);
     font-size:14.5px;
-    font-weight:500;
-    padding:11px 20px;
-    border-radius:6px;
+    font-weight:600;
+    padding:12px 22px;
+    border-radius:8px;
     cursor:pointer;
     border:1px solid transparent;
+    transition:transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
   }
   .btn:focus-visible{ outline:2px solid var(--heather); outline-offset:2px; }
   .btn-primary{
-    background:var(--ink);
+    background:linear-gradient(135deg, var(--ink) 0%, #3A3552 100%);
     color:var(--paper-raised);
+    box-shadow:0 4px 12px rgba(33,31,46,0.28);
   }
+  .btn-primary:hover:not(:disabled){ transform:translateY(-1px); box-shadow:0 6px 16px rgba(33,31,46,0.34); }
   .btn-primary:disabled{
     background:var(--ink-faint);
+    box-shadow:none;
     cursor:not-allowed;
   }
   .btn-ghost{
@@ -320,15 +403,16 @@
     color:var(--ink-soft);
     border-color:var(--rule);
   }
-  .btn-ghost:hover{ border-color:var(--ink-soft); }
+  .btn-ghost:hover{ border-color:var(--ink-soft); background:var(--rule-soft); }
 
   /* --- Support banner (wellbeing) --- */
   .support-banner{
     background:var(--support-bg);
     border:1px solid var(--support-border);
-    border-radius:6px;
+    border-radius:12px;
     padding:16px 18px;
     margin:0 0 18px;
+    box-shadow:var(--shadow-sm);
   }
   .support-banner p{
     margin:0 0 8px;
@@ -343,9 +427,10 @@
   .scam-banner{
     background:var(--scam-bg);
     border:1px solid var(--scam-border);
-    border-radius:6px;
+    border-radius:12px;
     padding:16px 18px;
     margin:0 0 18px;
+    box-shadow:var(--shadow-sm);
   }
   .scam-banner p{
     margin:0 0 8px;
@@ -360,7 +445,7 @@
   .fallback-banner{
     background:var(--heather-soft);
     border:1px solid var(--heather);
-    border-radius:6px;
+    border-radius:10px;
     padding:12px 16px;
     margin:0 0 18px;
     font-size:13px;
@@ -391,17 +476,65 @@
   }
   .loading-text{ color:var(--ink-soft); font-size:14.5px; }
 
+  /* --- Stat tiles (headline numbers) --- */
+  .stat-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+    gap:10px;
+    margin-bottom:22px;
+  }
+  .stat-tile{
+    border-radius:12px;
+    padding:16px 16px;
+    background:var(--paper-raised);
+    border:1px solid var(--rule);
+    box-shadow:var(--shadow-sm);
+  }
+  .stat-tile .stat-label{
+    font-size:11.5px;
+    font-weight:600;
+    letter-spacing:0.03em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    display:block;
+    margin-bottom:6px;
+  }
+  .stat-tile .stat-value{
+    font-family:var(--serif);
+    font-size:23px;
+    font-weight:600;
+    color:var(--ink);
+    font-variant-numeric:tabular-nums;
+    display:block;
+    line-height:1.2;
+  }
+  .stat-tile .stat-sub{
+    font-size:12px;
+    color:var(--ink-soft);
+    margin-top:4px;
+    display:block;
+  }
+  .stat-tile.stat-good{ background:var(--good-bg); border-color:var(--good-border); }
+  .stat-tile.stat-good .stat-value{ color:var(--good); }
+  .stat-tile.stat-warn{ background:var(--support-bg); border-color:var(--support-border); }
+  .stat-tile.stat-warn .stat-value{ color:var(--support); }
+  .stat-tile.stat-bad{ background:var(--scam-bg); border-color:var(--scam-border); }
+  .stat-tile.stat-bad .stat-value{ color:var(--scam); }
+  .stat-tile.stat-accent{ background:var(--heather-soft); border-color:var(--heather); }
+  .stat-tile.stat-accent .stat-value{ color:var(--heather-deep); }
+
   /* --- Calculated figures panel --- */
   .calc-panel{
     border:1px solid var(--rule);
-    background:var(--rule-soft);
-    border-radius:8px;
-    padding:20px 20px 6px;
+    background:var(--paper-raised);
+    border-radius:14px;
+    padding:22px 22px 8px;
     margin-bottom:26px;
+    box-shadow:var(--shadow-sm);
   }
   .calc-panel h4{
     font-family:var(--serif);
-    font-size:15px;
+    font-size:16px;
     margin:0 0 14px;
     color:var(--ink);
   }
@@ -424,6 +557,7 @@
   .calc-row .calc-label{ color:var(--ink-soft); }
   .calc-row .calc-value{ font-weight:600; font-variant-numeric:tabular-nums; text-align:right; }
   .calc-row.calc-total .calc-label, .calc-row.calc-total .calc-value{ color:var(--ink); font-weight:700; }
+  .calc-subvalue{ display:inline-block; margin-top:2px; font-size:12px; font-weight:400; color:var(--ink-soft); font-variant-numeric:tabular-nums; }
   .calc-footnote{
     font-size:12.5px;
     color:var(--ink-faint);
@@ -433,16 +567,35 @@
 
   /* --- Verdict banner --- */
   .verdict-banner{
-    border-radius:6px;
+    display:flex;
+    align-items:flex-start;
+    gap:13px;
+    border-radius:12px;
     padding:16px 18px;
     margin:0 0 18px;
     font-size:15px;
     line-height:1.55;
     font-weight:500;
   }
-  .verdict-good{ background:var(--heather-soft); color:var(--heather-deep); border:1px solid var(--heather); }
-  .verdict-warn{ background:var(--support-bg); color:var(--support); border:1px solid var(--support-border); }
-  .verdict-bad{ background:var(--scam-bg); color:var(--scam); border:1px solid var(--scam-border); }
+  .verdict-icon{
+    flex-shrink:0;
+    width:26px; height:26px;
+    margin-top:1px;
+  }
+  .verdict-icon svg{ width:100%; height:100%; }
+  .verdict-label{
+    display:block;
+    font-family:var(--sans);
+    font-size:11.5px;
+    font-weight:700;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    margin-bottom:3px;
+    opacity:0.85;
+  }
+  .verdict-good{ background:var(--good-bg); color:var(--good); border:1px solid var(--good-border); box-shadow:var(--shadow-sm); }
+  .verdict-warn{ background:var(--support-bg); color:var(--support); border:1px solid var(--support-border); box-shadow:var(--shadow-sm); }
+  .verdict-bad{ background:var(--scam-bg); color:var(--scam); border:1px solid var(--scam-border); box-shadow:var(--shadow-sm); }
 
   /* --- Forecast builder: multi-field steps --- */
   .step-subtitle{
@@ -470,7 +623,7 @@
     gap:14px;
     padding:14px 16px;
     border:1px solid var(--rule);
-    border-radius:6px;
+    border-radius:10px;
     background:var(--rule-soft);
     margin-bottom:10px;
   }
@@ -583,7 +736,8 @@
   .disclaimer strong{ color:#FAF9F2; }
 
   @media (max-width:480px){
-    .app-shell{ padding:32px 16px 150px; }
+    .app-shell{ padding:0 16px 150px; }
+    header.masthead{ margin:0 -16px 32px; padding:22px 16px 30px; }
     header.masthead h1{ font-size:23px; }
     .card{ padding:26px 20px; }
     .question-label{ font-size:19px; }
@@ -591,35 +745,32 @@
     .calc-row .calc-value, .recap-row .recap-value{ text-align:left; }
     .recap-row .recap-label{ max-width:100%; }
     .pension-card{ flex-direction:column; align-items:flex-start; }
+    .hero-card{ flex-direction:column; align-items:flex-start; padding:22px 20px; }
+    .hero-cta{ align-self:flex-start; }
+    .stat-grid{ grid-template-columns:1fr 1fr; }
   }
 </style>
 </head>
 <body>
-<noscript>
-  <div style="max-width:720px;margin:0 auto;padding:48px 24px;font-family:Georgia,serif;line-height:1.6;">
-    <h1>Cairn — Pension Guidance for Scotland</h1>
-    <p><strong>Educational guidance only</strong> — not a personal recommendation or regulated pension advice. Speak to an FCA-authorised financial adviser, or use <a href="https://www.pensionwise.gov.uk">Pension Wise</a> (free, if you're 50+) before making decisions.</p>
-    <p>Cairn is a free tool that helps people in Scotland understand their pension. Work through whichever topic is on your mind — your answers carry over between sections so you're not asked twice. This page needs JavaScript enabled to run the interactive tool; topics covered include:</p>
-    <h2>Full pension forecast</h2>
-    <p>Build a full household forecast — combine partners, multiple pensions, savings, and a target income to see if there's a gap.</p>
-    <h2>Fact-find</h2>
-    <p>Lay out your circumstances so guidance can be grounded in your own situation.</p>
-    <h2>Contributions & tax relief</h2>
-    <p>See how tax relief on your pension contributions actually works if you're a Scottish taxpayer.</p>
-    <h2>Pot & projections</h2>
-    <p>Get a general, illustrative sense of how your pension pot could grow — with figures worked out for you.</p>
-    <h2>State Pension & National Insurance</h2>
-    <p>Understand qualifying years in plain terms, without relying on figures that change every year.</p>
-    <h2>Retirement income options</h2>
-    <p>Think through the trade-offs between guaranteed income and flexibility.</p>
-    <h2>Beneficiaries & death benefits</h2>
-    <p>Understand how your pension is treated if you die, and why nominations matter under Scots law.</p>
-    <p>Free, impartial pension guidance is also available from <a href="https://www.pensionwise.gov.uk">Pension Wise</a> and <a href="https://www.moneyhelper.org.uk">MoneyHelper</a>. Check any firm on the <a href="https://register.fca.org.uk/s/">FCA Register</a> before acting on pension advice.</p>
-    <p><a href="./about.html">About Cairn</a></p>
-  </div>
-</noscript>
 
-<div class="app-shell" id="app" role="main"></div>
+<div class="app-shell" id="app" role="main"><noscript><h1>CAS - Pension Guidance for Scotland</h1><p>This free pension calculator needs JavaScript to run. Please enable it in your browser.</p></noscript></div>
+
+
+<section class="seo-about" aria-labelledby="about-cas" style="max-width:720px;margin:0 auto;padding:8px 24px 24px;font-family:'Work Sans',-apple-system,sans-serif;font-size:14.5px;line-height:1.65;color:rgba(33,31,46,0.72)">
+  <h2 id="about-cas" style="font-family:'Fraunces',Georgia,serif;font-size:20px;color:#211F2E;margin:0 0 8px">About CAS: free pension guidance for Scotland</h2>
+  <p>CAS is a free, educational pension calculator and guide for people living in Scotland. It helps you understand your retirement income <strong>after Scottish Income Tax</strong>, not just the headline gross figures.</p>
+  <h3 style="font-size:16px;color:#211F2E;margin:16px 0 4px">What you can do</h3>
+  <ul style="margin:0;padding-left:20px">
+    <li>Forecast household retirement income from defined contribution, defined benefit and in-payment pensions, savings and the State Pension.</li>
+    <li>See net (after-tax) income using Scottish Income Tax bands, including the personal allowance taper above &pound;100,000.</li>
+    <li>Check State Pension and National Insurance qualifying years.</li>
+    <li>Model the 25% tax-free lump sum and drawdown or annuity options.</li>
+    <li>Work out the earliest retirement age at which your target income is sustainable.</li>
+    <li>Includes a Police Scotland pension pathway covering the 2006 scheme, the McCloud remedy and 2015 CARE.</li>
+  </ul>
+  <h3 style="font-size:16px;color:#211F2E;margin:16px 0 4px">Useful free help</h3>
+  <p>For free, impartial guidance, see <a href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise" rel="noopener">Pension Wise</a> (age 50+) and <a href="https://www.gov.uk/check-state-pension" rel="noopener">Check your State Pension forecast</a>. CAS is educational only and is not regulated financial advice.</p>
+</section>
 
 <div class="disclaimer">
   <strong>Educational guidance only</strong> — not a personal recommendation or regulated pension advice. Speak to an FCA-authorised financial adviser, or use <strong>Pension Wise</strong> (free, if you're 50+) before making decisions.
@@ -632,7 +783,7 @@ const MODULES = [
     title: "Full pension forecast",
     description: "Build a full household forecast — combine partners, multiple pensions, savings, and a target income to see if there's a gap.",
     featured: true,
-    task: "Using the CALCULATED figures given, write a complete household retirement forecast summary. Bring together the household's combined projected pension income (from every pension listed, of whichever type), each person's State Pension once it starts at their own State Pension age, and any savings being used to bridge a gap. If a Police Scotland pension is present, briefly explain how it was worked out across its three distinct periods of service: pre-2015 years under the legacy 2006 final-salary scheme, 2015–2022 'remedy period' years resolved by the McCloud 'deferred choice underpin' (whichever of legacy or 2015 CARE treatment is more generous for those specific years), and years from April 2022 onward under the mandatory 2015 CARE scheme. Note that the deferred choice underpin outcome, and exact pensionable pay figures, should be confirmed with SPPA (the Scottish Public Pensions Agency) via an official Remediable Service Statement. Clearly state whether the household's target annual income is projected to be met, from what age, and — if there's a projected shortfall before all income sources are in payment — describe the gap in plain terms: how large it is, which ages it spans, and whether savings are projected to cover it or run out first. If a defined contribution pension is not taking its 25% tax-free lump sum, mention that this trades an upfront lump sum for a higher ongoing income. If a calculated earliest sustainable retirement age is given for a person, explain it clearly as a separate, calculated figure — the earliest age their income (with savings bridging any gap) sustainably supports the household's stated target — and note plainly if it differs from the retirement age they actually entered, without implying they must retire at either age. Weave in relevant OTHER CONTEXT (such as health, dependants, or nomination status) where genuinely relevant. Be clear throughout that every figure is an illustration built on assumed growth, annuity, drawdown, and State Pension assumptions, not a guarantee — real figures depend on investment performance, inflation, tax rules, and each person's actual State Pension record.",
+    task: "Using the CALCULATED figures given, write a complete household retirement forecast summary. Bring together the household's combined projected pension income (from every pension listed, of whichever type), each person's State Pension once it starts at their own State Pension age, and any savings being used to bridge a gap. Be precise and consistent about net versus gross throughout, exactly as the CALCULATED lines label each figure: each individual pension and State Pension amount is given GROSS (before tax) — that's what that pension itself pays out — while the target income, the phase-by-phase income timeline, the steady-state income, and any shortfall figures are all NET (after deducting estimated Scottish Income Tax, worked out per person). Never mix the two up or imply a gross pension figure is what lands in the person's pocket after tax. If a Police Scotland pension is present, briefly explain how it was worked out across its three distinct periods of service: pre-2015 years under the legacy 2006 final-salary scheme, 2015–2022 'remedy period' years resolved by the McCloud 'deferred choice underpin' (whichever of legacy or 2015 CARE treatment is more generous for those specific years), and years from April 2022 onward under the mandatory 2015 CARE scheme. Note that the deferred choice underpin outcome, and exact pensionable pay figures, should be confirmed with SPPA (the Scottish Public Pensions Agency) via an official Remediable Service Statement. Clearly state whether the household's net target annual income is projected to be met, from what age, and — if there's a projected shortfall before all income sources are in payment — describe the gap in plain terms: how large it is, which ages it spans, and whether savings are projected to cover it or run out first. If a defined contribution pension is not taking its 25% tax-free lump sum, mention that this trades an upfront lump sum for a higher ongoing income (the lump sum itself is tax-free and not reduced by Income Tax). If a calculated earliest sustainable retirement age is given for a person, explain it clearly as a separate, calculated figure — the earliest age their net income (with savings bridging any gap) sustainably supports the household's stated net target — and note plainly if it differs from the retirement age they actually entered, without implying they must retire at either age. Weave in relevant OTHER CONTEXT (such as health, dependants, or nomination status) where genuinely relevant. Be clear throughout that every figure is an illustration built on assumed growth, annuity, drawdown, State Pension and Income Tax assumptions, not a guarantee — real figures depend on investment performance, inflation, actual tax rules and rates at the time, and each person's actual State Pension record.",
     questions: []
   },
   {
@@ -722,13 +873,13 @@ const MODULES = [
   }
 ];
 
-const SYSTEM_PROMPT = `You are the guidance engine inside Cairn, a Scotland-focused app that helps people understand their pensions before they speak to a professional. Your knowledge is informed by UK pension principles and the Scottish income tax system.
+const SYSTEM_PROMPT = `You are the guidance engine inside CAS, a Scotland-focused app that helps people understand their pensions before they speak to a professional. Your knowledge is informed by UK pension principles and the Scottish income tax system.
 
 Rules you always follow:
 - You are not a regulated financial or pension adviser. Never phrase anything as a personal recommendation or a guaranteed outcome.
 - Write in plain, warm, professional language. Explain any jargon the first time you use it.
 - Ground everything in the specific facts the person gave you — refer back to their numbers and situation, don't give generic filler.
-- If the USER FACTS include lines starting "CALCULATED", those figures have already been worked out correctly by the app using recognised pension maths. Refer to them directly and explain what they mean — never recompute or contradict them. Any figures given as illustrative (tax bands, growth rates, annuity rates, withdrawal rates, allowances, State Pension estimates) may have changed since they were last reviewed — say so where relevant and point to GOV.UK for current figures.
+- If the USER FACTS include lines starting "CALCULATED", those figures have already been worked out correctly by the app using recognised pension maths. Refer to them directly and explain what they mean — never recompute or contradict them. Any figures given as illustrative (tax bands, growth rates, annuity rates, withdrawal rates, allowances, State Pension estimates) may have changed since they were last reviewed — say so where relevant and point to GOV.UK for current figures. Some CALCULATED lines are explicitly marked GROSS (before tax) and others NET (after tax) — always carry that exact label through into your own wording (e.g. "£X/yr gross" or "£X/yr net") rather than dropping it or treating the two as interchangeable.
 - If the USER FACTS include lines starting "OTHER CONTEXT", treat these as background the person shared elsewhere in the app. Weave them in naturally where genuinely relevant, but do not force every piece of context into every answer.
 - If the USER FACTS include a "WELLBEING NOTE", respond with extra care: keep language very simple, avoid comparing products or urging any particular action, and make your closing line a warm, clear encouragement to speak to Pension Wise (free, government-backed, for over-50s) or MoneyHelper before doing anything else.
 - If the USER FACTS include a "SCAM ALERT NOTE", treat this seriously but calmly: name the common warning signs of pension scams that seem to apply (cold contact, pressure to act fast, promises of guaranteed or unusually high returns, requests to access a pension before 55), advise never to be rushed into a decision, and direct them to check any firm on the FCA Register and to use FCA ScamSmart before doing anything else. Do not speculate about who contacted them.
@@ -825,6 +976,51 @@ const RUK_BANDS = [
 function marginalBand(income, bands){
   for(const b of bands){ if(income <= b.upTo) return b; }
   return bands[bands.length-1];
+}
+
+// Works out the actual income tax due on a given gross annual income, band by
+// band (not just applying the marginal rate to the whole amount) — the same
+// progressive calculation HMRC and Revenue Scotland use. `bands` gives each
+// band's cumulative upper threshold and rate, e.g. SCOT_BANDS/RUK_BANDS above.
+function calcIncomeTaxDue(grossIncome, bands){
+  if(!grossIncome || grossIncome <= 0) return 0;
+  let tax = 0, prev = 0;
+  for(const b of bands){
+    if(grossIncome <= prev) break;
+    tax += (Math.min(grossIncome, b.upTo) - prev) * (b.rate/100);
+    prev = b.upTo;
+  }
+  return tax;
+}
+
+// Between £100,000 and £125,140 of income, the tax-free personal allowance is
+// withdrawn at £1 for every £2 earned above £100,000 — so someone's zero-rate
+// band shrinks (and can disappear entirely by £125,140). This returns an
+// adjusted copy of `bands` with that first threshold reduced accordingly; the
+// higher thresholds above it are unaffected, since they're already expressed
+// as absolute income levels rather than band widths.
+function personalAllowanceTaperedBands(grossIncome, bands){
+  if(grossIncome <= 100000) return bands;
+  const reducedPA = Math.max(0, bands[0].upTo - (grossIncome - 100000)/2);
+  const adjusted = bands.slice();
+  adjusted[0] = Object.assign({}, bands[0], { upTo: reducedPA });
+  return adjusted;
+}
+
+// Converts one person's combined taxable retirement income for a single year
+// (their own pensions plus their own State Pension, once each is in payment)
+// into a net, after-tax figure. Always uses the Scottish bands: this is a
+// Scotland-focused app, and elsewhere it already defaults to Scottish bands
+// "when Scottish or unsure" — a rest-of-UK taxpayer would keep slightly more
+// of any income taxed above the basic rate. Tax-free elements (a 25% pension
+// lump sum, drawing down savings) are never passed into this function, since
+// they're outside Income Tax entirely.
+function netOfIncomeTax(grossIncome){
+  const g = Math.max(0, grossIncome || 0);
+  if(g <= 0) return { gross:0, tax:0, net:0 };
+  const bands = personalAllowanceTaperedBands(g, SCOT_BANDS);
+  const tax = calcIncomeTaxDue(g, bands);
+  return { gross: g, tax, net: g - tax };
 }
 
 const PENSION_LUMP_SUM_ALLOWANCE = 268275; // illustrative — confirm current allowance before relying on it
@@ -1206,7 +1402,10 @@ function deriveIncomePhases(timelineRows){
   let lastIncome = null;
   timelineRows.forEach(row => {
     if(lastIncome === null || Math.abs(row.totalIncome - lastIncome) > 0.5){
-      phases.push({ startAge: row.p1Age, totalIncome: row.totalIncome, shortfall: row.shortfall, savingsUsed: row.savingsUsed });
+      phases.push({
+        startAge: row.p1Age, totalIncome: row.totalIncome, grossIncome: row.grossIncome, taxDue: row.taxDue,
+        shortfall: row.shortfall, savingsUsed: row.savingsUsed
+      });
       lastIncome = row.totalIncome;
     }
   });
@@ -1268,21 +1467,32 @@ function computeHouseholdForecastCore(forecastData){
   for(let offset = incomeNeedStartOffset; offset <= loopEnd; offset++){
     let pensionIncome = 0;
     let statePensionIncome = 0;
+    let taxDue = 0;
 
+    // Income Tax is worked out per person, not per household — each person's
+    // own pensions and their own State Pension (once each is in payment) are
+    // added together and taxed on that individual's bands, before the two
+    // people's after-tax incomes are combined into a household total.
     personResults.forEach(pr => {
       if(pr.currentAge === null) return;
       const ageAtOffset = pr.currentAge + offset;
+      let personGrossPension = 0;
       (pr.pensionInfo.pensions || []).forEach(pen => {
         if(pen.incomeStartAge !== null && pen.incomeStartAge !== undefined && ageAtOffset >= pen.incomeStartAge){
-          pensionIncome += pen.annualIncome || 0;
+          personGrossPension += pen.annualIncome || 0;
         }
       });
+      let personGrossSP = 0;
       if(pr.spInfo.spa !== null && ageAtOffset >= pr.spInfo.spa){
-        statePensionIncome += pr.spInfo.amount || 0;
+        personGrossSP = pr.spInfo.amount || 0;
       }
+      pensionIncome += personGrossPension;
+      statePensionIncome += personGrossSP;
+      taxDue += netOfIncomeTax(personGrossPension + personGrossSP).tax;
     });
 
-    const totalIncome = pensionIncome + statePensionIncome;
+    const grossIncome = pensionIncome + statePensionIncome;
+    const totalIncome = Math.max(0, grossIncome - taxDue); // net household income, after estimated Income Tax
     let shortfall = requiredIncome !== null ? Math.max(0, requiredIncome - totalIncome) : 0;
     let savingsUsed = 0;
 
@@ -1292,7 +1502,7 @@ function computeHouseholdForecastCore(forecastData){
     shortfall = offsetResult.remainingShortfall;
 
     timeline.push({
-      offset, p1Age: p1Age + offset, pensionIncome, statePensionIncome, totalIncome,
+      offset, p1Age: p1Age + offset, pensionIncome, statePensionIncome, grossIncome, taxDue, totalIncome,
       savingsUsed, shortfall
     });
 
@@ -1331,6 +1541,8 @@ function computeHouseholdForecastCore(forecastData){
     savingsProjection,
     steadyStateAge: p1Age + steadyStateOffset,
     steadyStateIncome: steadyStateRow ? steadyStateRow.totalIncome : 0,
+    steadyStateGrossIncome: steadyStateRow ? steadyStateRow.grossIncome : 0,
+    steadyStateTax: steadyStateRow ? steadyStateRow.taxDue : 0,
     phases,
     bridgeGapExists,
     bridgeFullyCoveredBySavings,
@@ -1423,9 +1635,13 @@ function renderHeader(){
     <header class="masthead">
       <div class="brand">
         <div class="cairn-mark" aria-hidden="true"><span></span><span></span><span></span></div>
-        <h1>Cairn</h1>
+        <h1>CAS</h1>
       </div>
       <span class="tag">waymarkers for your pension</span>
+      <svg class="peaks" viewBox="0 0 760 46" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,46 L110,10 L180,30 L260,4 L340,28 L430,14 L520,32 L610,8 L690,26 L760,16 L760,46 Z" fill="rgba(255,255,255,0.10)"/>
+        <path d="M0,46 L70,24 L150,36 L240,18 L330,38 L420,22 L500,40 L590,20 L670,34 L760,24 L760,46 Z" fill="rgba(255,255,255,0.06)"/>
+      </svg>
     </header>
   `;
 }
@@ -1448,21 +1664,47 @@ function renderScamBanner(){
   `;
 }
 
+const MODULE_ICONS = {
+  "forecast": '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="2.4" fill="currentColor" stroke="none"/><path d="M12 3.5v2.4M12 18.1v2.4M20.5 12h-2.4M5.9 12H3.5"/>',
+  "fact-find": '<rect x="6" y="4" width="12" height="16" rx="2"/><path d="M9 3.6h6a1 1 0 0 1 1 1V6H8V4.6a1 1 0 0 1 1-1Z"/><path d="M9 11h6M9 14.3h6M9 7.7h3"/>',
+  "tax-relief": '<circle cx="8.5" cy="8.5" r="3.4"/><circle cx="15.5" cy="15.5" r="3.4"/><path d="M6 18 18 6"/>',
+  "pot-projection": '<path d="M4 19V9.5M9.5 19V5M15 19v-7M20 19V11"/><path d="M4 19h16"/>',
+  "state-pension": '<path d="M12 3.4 19 6v5.4c0 4.6-3 7.9-7 9.2-4-1.3-7-4.6-7-9.2V6l7-2.6Z"/><path d="m9 12 2 2 4-4.4"/>',
+  "income-options": '<path d="M6 4v16M6 4l12 5-12 5"/>',
+  "death-benefits": '<path d="M12 20.4S4 15.6 4 9.8A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 8 2.8c0 5.8-8 10.6-8 10.6Z"/>'
+};
+
 function renderHome(){
-  const rows = MODULES.map(m => `
-    <button class="waypoint-row ${m.featured ? 'waypoint-featured' : ''}" data-module="${m.id}">
-      <div class="entry-text">
-        <h3>${m.title}${m.featured ? '<span class="feature-badge">Calculator</span>' : ''}</h3>
-        <p>${m.description}</p>
-      </div>
-      <span class="entry-arrow" aria-hidden="true">→</span>
+  const featured = MODULES.find(m => m.featured);
+  const rest = MODULES.filter(m => !m.featured);
+
+  const restCards = rest.map(m => `
+    <button class="way-card" data-module="${m.id}">
+      <span class="way-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${MODULE_ICONS[m.id] || ''}</svg></span>
+      <span class="way-text">
+        <span class="way-title">${m.title}</span>
+        <span class="way-desc">${m.description}</span>
+      </span>
+      <span class="way-arrow" aria-hidden="true">→</span>
     </button>
   `).join("");
 
   return `
     ${renderHeader()}
     <p class="intro">Work through a short set of questions on whichever waypoint is on your mind. Answers you give in one section — like your age or pot size — carry over wherever else they're relevant, so you won't be asked twice.</p>
-    <div class="waypoints">${rows}</div>
+
+    <button class="hero-card" data-module="${featured.id}">
+      <span class="hero-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${MODULE_ICONS[featured.id]}</svg></span>
+      <span class="hero-copy">
+        <span class="hero-eyebrow">Flagship calculator</span>
+        <span class="hero-title">${featured.title}</span>
+        <span class="hero-desc">${featured.description}</span>
+      </span>
+      <span class="hero-cta">Start forecast <span aria-hidden="true">→</span></span>
+    </button>
+
+    <h2 class="section-heading">Or explore a single topic</h2>
+    <div class="waypoints">${restCards}</div>
     <details class="data-note">
       <summary>How your data is handled</summary>
       <p>Your answers are sent directly to Claude to generate the guidance you see, and aren't stored on a server by this app. Closing or refreshing this page clears everything — nothing is saved for next time.</p>
@@ -1470,7 +1712,6 @@ function renderHome(){
     <div class="home-actions">
       <button class="btn btn-ghost" id="reset-all-btn">Clear all my answers</button>
     </div>
-    <p style="margin-top:24px;font-size:13px;"><a href="./about.html" style="color:var(--ink-soft);">About Cairn</a></p>
   `;
 }
 
@@ -1730,7 +1971,7 @@ function renderForecastStepSavings(fd){
 function renderForecastStepIncomeNeed(fd){
   return `
     <p class="question-label" id="question-label">What annual income would you like in retirement?</p>
-    <p class="step-subtitle">In today's money, for your whole household. Not sure? Many people aim for roughly two-thirds of their pre-retirement take-home income.</p>
+    <p class="step-subtitle">In today's money, for your whole household, as a net (take-home, after-tax) figure — the forecast compares it against your projected pension and State Pension income after estimated Income Tax, not before. Not sure? Many people aim for roughly two-thirds of their pre-retirement take-home income.</p>
     <div class="form-field">
       <label class="field-label" for="pf-income-need">Annual household income needed</label>
       <input type="text" id="pf-income-need" placeholder="e.g. £24,000" value="${escapeAttr(fd.annualRequiredIncome)}">
@@ -1956,19 +2197,85 @@ function renderLoading(){
   `;
 }
 
+const VERDICT_ICONS = {
+  good: '<path d="M5 13l4 4L19 7"/>',
+  warn: '<path d="M12 4 3 19h18L12 4Z"/><path d="M12 10v4"/><circle cx="12" cy="16.6" r="0.6" fill="currentColor" stroke="none"/>',
+  bad: '<circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.2v.1"/>'
+};
+
 function renderForecastVerdict(c){
   if(!c || c.kind !== 'household-forecast' || c.requiredIncome === null) return '';
-  let cls = 'verdict-good', text = '';
+  let cls = 'verdict-good', icon = 'good', label = 'On track', text = '';
   if(!c.bridgeGapExists){
-    text = `Your target income of ${formatGBP(c.requiredIncome)}/yr is projected to be met from age ${c.incomeNeedStartAge}.`;
+    text = `Your target income of ${formatGBP(c.requiredIncome)}/yr net (after tax) is projected to be met from age ${c.incomeNeedStartAge}.`;
   } else if(c.bridgeFullyCoveredBySavings){
-    cls = 'verdict-warn';
-    text = `There's a projected income gap before every pension is fully in payment — but your savings, growing at an illustrative ${SAVINGS_GROWTH_RATE}%/yr, are projected to be enough to bridge it.`;
+    cls = 'verdict-warn'; icon = 'warn'; label = 'Gap, but bridged';
+    text = `There's a projected net income gap before every pension is fully in payment — but your savings, growing at an illustrative ${SAVINGS_GROWTH_RATE}%/yr, are projected to be enough to bridge it.`;
   } else {
-    cls = 'verdict-bad';
-    text = `There's a projected income shortfall of around ${formatGBP(c.firstUnmetShortfallAmount)}/yr from age ${c.firstUnmetShortfallAge} that your savings don't fully cover.`;
+    cls = 'verdict-bad'; icon = 'bad'; label = 'Shortfall projected';
+    text = `There's a projected net income shortfall of around ${formatGBP(c.firstUnmetShortfallAmount)}/yr from age ${c.firstUnmetShortfallAge} that your savings don't fully cover.`;
   }
-  return `<div class="verdict-banner ${cls}">${text}</div>`;
+  return `<div class="verdict-banner ${cls}">
+    <span class="verdict-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${VERDICT_ICONS[icon]}</svg></span>
+    <span class="verdict-text"><span class="verdict-label">${label}</span>${text}</span>
+  </div>`;
+}
+
+// A row of headline "stat tile" figures above the detailed breakdown — the
+// numbers someone would want at a glance: their net target, what they're
+// projected to actually have once everything is in payment, and the earliest
+// retirement age their own figures support (where a target was given).
+function renderForecastStatTiles(c){
+  if(!c || c.kind !== 'household-forecast') return '';
+  const tiles = [];
+
+  if(c.requiredIncome !== null){
+    tiles.push(`
+      <div class="stat-tile stat-accent">
+        <span class="stat-label">Net target</span>
+        <span class="stat-value">${formatGBP(c.requiredIncome)}</span>
+        <span class="stat-sub">per year, after tax</span>
+      </div>
+    `);
+  }
+
+  const steadyCls = (c.requiredIncome === null || c.steadyStateIncome >= c.requiredIncome - 0.5) ? 'stat-good' : 'stat-bad';
+  tiles.push(`
+    <div class="stat-tile ${steadyCls}">
+      <span class="stat-label">Steady-state income</span>
+      <span class="stat-value">${formatGBP(c.steadyStateIncome)}</span>
+      <span class="stat-sub">net, from age ${c.steadyStateAge}</span>
+    </div>
+  `);
+
+  if(c.requiredIncome !== null){
+    let gapCls = 'stat-good', gapLabel = 'No gap';
+    if(c.bridgeGapExists && c.bridgeFullyCoveredBySavings){ gapCls = 'stat-warn'; gapLabel = 'Bridged by savings'; }
+    else if(c.bridgeGapExists && !c.bridgeFullyCoveredBySavings){ gapCls = 'stat-bad'; gapLabel = `${formatGBP(c.firstUnmetShortfallAmount)}/yr short`; }
+    tiles.push(`
+      <div class="stat-tile ${gapCls}">
+        <span class="stat-label">Income gap check</span>
+        <span class="stat-value" style="font-size:18px;">${gapLabel}</span>
+        <span class="stat-sub">from age ${c.incomeNeedStartAge}</span>
+      </div>
+    `);
+  }
+
+  const achievableAges = (c.calculatedRetirementAges || []).filter(a => a && a.achievable === true);
+  if(achievableAges.length){
+    const ageText = achievableAges.length > 1
+      ? achievableAges.map((a,i) => `${personLabel(c.calculatedRetirementAges.indexOf(a))}: ${a.age}`).join(' · ')
+      : `Age ${achievableAges[0].age}`;
+    tiles.push(`
+      <div class="stat-tile">
+        <span class="stat-label">Earliest sustainable retirement</span>
+        <span class="stat-value" style="font-size:18px;">${ageText}</span>
+        <span class="stat-sub">calculated, meets net target</span>
+      </div>
+    `);
+  }
+
+  return `<div class="stat-grid">${tiles.join('')}</div>`;
 }
 
 function renderCalcPanel(){
@@ -2013,7 +2320,7 @@ function renderCalcPanel(){
     rows += `<div class="calc-row"><span class="calc-label">Household type</span><span class="calc-value">${c.householdType} (${c.numPeople} ${c.numPeople===1?'person':'people'})</span></div>`;
 
     c.personResults.forEach((pr, idx) => {
-      rows += `<div class="calc-section-label">${personLabel(idx)}'s pensions</div>`;
+      rows += `<div class="calc-section-label">${personLabel(idx)}'s pensions (gross, before tax)</div>`;
       if(!pr.pensionInfo.pensions.length){
         rows += `<div class="calc-row"><span class="calc-label">Pensions</span><span class="calc-value">None added</span></div>`;
       } else {
@@ -2043,14 +2350,14 @@ function renderCalcPanel(){
     rows += `<div class="calc-section-label">Savings</div>`;
     rows += `<div class="calc-row"><span class="calc-label">Projected balance at age ${c.incomeNeedStartAge}</span><span class="calc-value">${formatGBP(c.savingsProjection.balanceAtStart)}</span></div>`;
 
-    rows += `<div class="calc-section-label">Income vs. target</div>`;
-    if(c.requiredIncome !== null) rows += `<div class="calc-row"><span class="calc-label">Target household income</span><span class="calc-value">${formatGBP(c.requiredIncome)}/yr</span></div>`;
+    rows += `<div class="calc-section-label">Income vs. target (net, after tax)</div>`;
+    if(c.requiredIncome !== null) rows += `<div class="calc-row"><span class="calc-label">Target household income (net)</span><span class="calc-value">${formatGBP(c.requiredIncome)}/yr</span></div>`;
     c.phases.forEach(ph => {
       const shortfallNote = (c.requiredIncome !== null && ph.shortfall > 0.5) ? ` (shortfall ${formatGBP(ph.shortfall)})` : '';
       const savingsNote = (ph.savingsUsed > 0.5) ? ` — ${formatGBP(ph.savingsUsed)}/yr drawn from savings` : '';
-      rows += `<div class="calc-row"><span class="calc-label">From age ${ph.startAge}</span><span class="calc-value">${formatGBP(ph.totalIncome)}/yr${shortfallNote}${savingsNote}</span></div>`;
+      rows += `<div class="calc-row"><span class="calc-label">From age ${ph.startAge}</span><span class="calc-value">${formatGBP(ph.totalIncome)}/yr net${shortfallNote}${savingsNote}<br><span class="calc-subvalue">${formatGBP(ph.grossIncome)}/yr before tax − ${formatGBP(ph.taxDue)}/yr est. Income Tax</span></span></div>`;
     });
-    rows += `<div class="calc-row calc-total"><span class="calc-label">Steady state from age ${c.steadyStateAge}</span><span class="calc-value">${formatGBP(c.steadyStateIncome)}/yr</span></div>`;
+    rows += `<div class="calc-row calc-total"><span class="calc-label">Steady state from age ${c.steadyStateAge}</span><span class="calc-value">${formatGBP(c.steadyStateIncome)}/yr net<br><span class="calc-subvalue">${formatGBP(c.steadyStateGrossIncome)}/yr before tax − ${formatGBP(c.steadyStateTax)}/yr est. Income Tax</span></span></div>`;
 
     if(c.requiredIncome !== null){
       let gapNote;
@@ -2077,7 +2384,7 @@ function renderCalcPanel(){
       });
     }
 
-    footnote = `Uses recognised but illustrative assumptions: ${GROWTH_SCENARIOS[1].rate}% pension growth, the ${SUSTAINABLE_WITHDRAWAL_RATE}% drawdown rule, ${SAVINGS_GROWTH_RATE}% savings growth, and State Pension ages estimated from current UK legislation (defined benefit figures use what you entered directly). None of this is a guarantee — check your own scheme paperwork and your GOV.UK State Pension forecast for exact figures.`;
+    footnote = `Each pension figure above is shown gross (before tax) — what that pension itself pays out. The "Income vs. target" figures below are different: they're net, after deducting estimated Scottish Income Tax on each person's own combined taxable income (their pensions plus their own State Pension, once each is in payment, taxed per person as HMRC and Revenue Scotland actually do it — not simply as a flat rate on the household total), including the £100,000–£125,140 personal allowance taper where relevant. Tax-free elements — a 25% pension lump sum, and money drawn from savings — are never taxed again. Uses recognised but illustrative assumptions: ${GROWTH_SCENARIOS[1].rate}% pension growth, the ${SUSTAINABLE_WITHDRAWAL_RATE}% drawdown rule, ${SAVINGS_GROWTH_RATE}% savings growth, current tax-year Scottish Income Tax bands, and State Pension ages estimated from current UK legislation (defined benefit figures use what you entered directly). None of this is a guarantee — check your own scheme paperwork and your GOV.UK State Pension forecast for exact figures.`;
 
     const hasPoliceLegacy = c.personResults.some(pr => (pr.pensionInfo.pensions||[]).some(pen => pen.type==='police' && pen.legacyYears > 0));
     const hasPoliceCare = c.personResults.some(pr => (pr.pensionInfo.pensions||[]).some(pen => pen.type==='police' && pen.careYears > 0));
@@ -2135,7 +2442,7 @@ function renderFullRecap(profile, fd){
 
   return `
     <details class="recap">
-      <summary>Full recap of everything you've told Cairn</summary>
+      <summary>Full recap of everything you've told CAS</summary>
       ${combined}
     </details>
   `;
@@ -2152,8 +2459,9 @@ function renderAdvice(){
       </div>
       ${state.scamFlag ? renderScamBanner() : ""}
       ${state.wellbeingFlag ? renderWellbeingBanner() : ""}
-      ${state.usedLocalFallback ? `<div class="fallback-banner">Written using Cairn's built-in explanations rather than the online guidance service, which wasn't reachable from here (this happens when the app is hosted outside Claude.ai — the figures below are unaffected and calculated the same way either way).</div>` : ""}
+      ${state.usedLocalFallback ? `<div class="fallback-banner">Written using CAS's built-in explanations rather than the online guidance service, which wasn't reachable from here (this happens when the app is hosted outside Claude.ai — the figures below are unaffected and calculated the same way either way).</div>` : ""}
       ${isForecast ? renderForecastVerdict(state.calcResults) : ""}
+      ${isForecast ? renderForecastStatTiles(state.calcResults) : ""}
       ${renderCalcPanel()}
       <div class="advice">${state.adviceHtml}</div>
       ${isForecast ? renderFullRecap(state.answers, state.forecastData) : ""}
@@ -2203,7 +2511,7 @@ function render(){
 
 function attachHandlers(){
   if(state.screen === "home"){
-    document.querySelectorAll('.waypoint-row').forEach(row => {
+    document.querySelectorAll('[data-module]').forEach(row => {
       row.addEventListener('click', () => {
         const mod = MODULES.find(m => m.id === row.dataset.module);
         if(mod.id === "forecast"){
@@ -2392,47 +2700,48 @@ function calcResultsToFactLines(calcResults){
       const who = personLabel(idx);
       lines.push(`CALCULATED — ${who}: current age ${pr.currentAge === null ? 'not given' : pr.currentAge}, target retirement age ${pr.retireAge === null ? 'not given' : pr.retireAge}`);
       (pr.pensionInfo.pensions||[]).forEach(pen => {
-        if(pen.type === "dc") lines.push(`CALCULATED — ${who}'s defined contribution pension: projected pot ${formatGBP(pen.potAtRetirement)} at retirement${pen.lumpSum>0.5 ? `, taking a 25% tax-free lump sum of ${formatGBP(pen.lumpSum)}` : ', not taking a tax-free lump sum (full pot left invested for income)'}, illustrative drawdown income ${formatGBP(pen.annualIncome)}/yr from age ${pen.incomeStartAge}`);
-        if(pen.type === "db") lines.push(`CALCULATED — ${who}'s defined benefit pension: ${formatGBP(pen.annualIncome)}/yr from age ${pen.incomeStartAge}`);
-        if(pen.type === "inpayment") lines.push(`CALCULATED — ${who}'s pension already in payment: ${formatGBP(pen.annualIncome)}/yr, ongoing`);
+        if(pen.type === "dc") lines.push(`CALCULATED — ${who}'s defined contribution pension: projected pot ${formatGBP(pen.potAtRetirement)} at retirement${pen.lumpSum>0.5 ? `, taking a 25% tax-free lump sum of ${formatGBP(pen.lumpSum)}` : ', not taking a tax-free lump sum (full pot left invested for income)'}, illustrative drawdown income ${formatGBP(pen.annualIncome)}/yr GROSS (before tax) from age ${pen.incomeStartAge}`);
+        if(pen.type === "db") lines.push(`CALCULATED — ${who}'s defined benefit pension: ${formatGBP(pen.annualIncome)}/yr GROSS (before tax) from age ${pen.incomeStartAge}`);
+        if(pen.type === "inpayment") lines.push(`CALCULATED — ${who}'s pension already in payment: ${formatGBP(pen.annualIncome)}/yr GROSS (before tax), ongoing`);
         if(pen.type === "police"){
           const breakdown = pen.hybrid
             ? `legacy 2006 scheme for ${pen.legacyYears.toFixed(1)} years (${formatGBP(pen.legacyPension)}/yr) plus 2015 CARE for ${pen.careYears.toFixed(1)} years (${formatGBP(pen.carePension)}/yr${pen.careReductionFactor < 1 ? ', reduced for early payment' : ''})`
             : (pen.legacyYears > 0
                 ? `legacy 2006 final-salary scheme only, ${pen.legacyYears.toFixed(1)} qualifying years`
                 : `2015 CARE scheme only, ${pen.careYears.toFixed(1)} qualifying years${pen.careReductionFactor < 1 ? ', reduced for early payment before age 60' : ''}`);
-          lines.push(`CALCULATED — ${who}'s Police Scotland pension (McCloud remedy applied: ${breakdown}, rank ${pen.rank}): ${formatGBP(pen.annualIncome)}/yr total from age ${pen.incomeStartAge}${pen.lumpSum>0.5 ? ', plus an automatic lump sum of ' + formatGBP(pen.lumpSum) + ' from the legacy portion' : ''}${pen.isDeferred ? ' — this is a deferred pension since the given retirement age is before the earliest normal pension age of 55' : ''}`);
+          lines.push(`CALCULATED — ${who}'s Police Scotland pension (McCloud remedy applied: ${breakdown}, rank ${pen.rank}): ${formatGBP(pen.annualIncome)}/yr GROSS (before tax) total from age ${pen.incomeStartAge}${pen.lumpSum>0.5 ? ', plus an automatic lump sum of ' + formatGBP(pen.lumpSum) + ' from the legacy portion' : ''}${pen.isDeferred ? ' — this is a deferred pension since the given retirement age is before the earliest normal pension age of 55' : ''}`);
         }
       });
       if(!pr.pensionInfo.pensions.length) lines.push(`CALCULATED — ${who} has no private pensions on record`);
-      lines.push(`CALCULATED — ${who}'s State Pension: ${formatGBP(pr.spInfo.amount)}/yr from age ${pr.spInfo.spa === null ? 'not estimable' : pr.spInfo.spa} (${pr.spInfo.source === 'known' ? "their own checked GOV.UK forecast" : "estimated from qualifying NI years"})`);
+      lines.push(`CALCULATED — ${who}'s State Pension: ${formatGBP(pr.spInfo.amount)}/yr GROSS (before tax) from age ${pr.spInfo.spa === null ? 'not estimable' : pr.spInfo.spa} (${pr.spInfo.source === 'known' ? "their own checked GOV.UK forecast" : "estimated from qualifying NI years"})`);
     });
     lines.push(`CALCULATED — household savings: ${formatGBP(calcResults.savingsProjection.current)} now, ${formatGBP(calcResults.savingsProjection.monthly)}/mo contribution, projected to grow to ${formatGBP(calcResults.savingsProjection.balanceAtStart)} by age ${calcResults.incomeNeedStartAge}`);
-    lines.push(`CALCULATED — target annual household income: ${calcResults.requiredIncome !== null ? formatGBP(calcResults.requiredIncome) + '/yr' : 'not given'}`);
+    lines.push(`CALCULATED — target annual household income: ${calcResults.requiredIncome !== null ? formatGBP(calcResults.requiredIncome) + '/yr NET (this is what the person said they want to have to spend, after tax)' : 'not given'}`);
     lines.push(`CALCULATED — income need begins at age ${calcResults.incomeNeedStartAge} (the earliest target retirement age in the household)`);
-    lines.push(`CALCULATED — once every pension and State Pension is in payment (from age ${calcResults.steadyStateAge}), total household income is projected to be ${formatGBP(calcResults.steadyStateIncome)}/yr`);
+    lines.push(`CALCULATED — once every pension and State Pension is in payment (from age ${calcResults.steadyStateAge}), total household income is projected to be ${formatGBP(calcResults.steadyStateIncome)}/yr NET, after an estimated ${formatGBP(calcResults.steadyStateTax)}/yr of Income Tax is deducted from ${formatGBP(calcResults.steadyStateGrossIncome)}/yr gross`);
     if(calcResults.requiredIncome !== null){
       if(!calcResults.bridgeGapExists){
-        lines.push(`CALCULATED — no projected income gap: household income is projected to meet the ${formatGBP(calcResults.requiredIncome)}/yr target from age ${calcResults.incomeNeedStartAge} onward`);
+        lines.push(`CALCULATED — no projected income gap: household NET income is projected to meet the ${formatGBP(calcResults.requiredIncome)}/yr NET target from age ${calcResults.incomeNeedStartAge} onward`);
       } else if(calcResults.bridgeFullyCoveredBySavings){
-        lines.push(`CALCULATED — there is a projected income gap before all pensions/State Pension are in payment, but savings are projected to be sufficient to bridge it in full`);
+        lines.push(`CALCULATED — there is a projected NET income gap before all pensions/State Pension are in payment, but savings are projected to be sufficient to bridge it in full`);
       } else {
-        lines.push(`CALCULATED — there is a projected income shortfall that savings do NOT fully cover: the first uncovered shortfall is projected at around ${formatGBP(calcResults.firstUnmetShortfallAmount)}/yr from age ${calcResults.firstUnmetShortfallAge}`);
+        lines.push(`CALCULATED — there is a projected NET income shortfall that savings do NOT fully cover: the first uncovered shortfall is projected at around ${formatGBP(calcResults.firstUnmetShortfallAmount)}/yr from age ${calcResults.firstUnmetShortfallAge}`);
       }
       (calcResults.calculatedRetirementAges || []).forEach((calc, idx) => {
         const who = personLabel(idx);
         if(calc && calc.achievable === true){
-          lines.push(`CALCULATED — ${who}'s earliest sustainable retirement age, given the ${formatGBP(calcResults.requiredIncome)}/yr household target and everything else held as stated: age ${calc.age} (this is a calculated figure, separate from and not necessarily the same as the target retirement age ${who.toLowerCase()} entered)`);
+          lines.push(`CALCULATED — ${who}'s earliest sustainable retirement age, given the ${formatGBP(calcResults.requiredIncome)}/yr NET household target and everything else held as stated: age ${calc.age} (this is a calculated figure, separate from and not necessarily the same as the target retirement age ${who.toLowerCase()} entered)`);
         } else if(calc && calc.achievable === false){
           lines.push(`CALCULATED — ${who}'s target income does not appear achievable at any retirement age up to ${RETIREMENT_AGE_SEARCH_CAP} with the pensions, savings and State Pension figures given`);
         }
       });
     }
+    lines.push(`CALCULATED — every pension and State Pension figure listed above by name is GROSS (before tax); every figure in the phase-by-phase income timeline below, and the target/steady-state/shortfall figures, is NET (after deducting estimated Scottish Income Tax, worked out per person on their own combined taxable income, including the £100,000–£125,140 personal allowance taper where relevant). A 25% pension lump sum and money drawn from savings are tax-free and are not reduced further.`);
     calcResults.phases.forEach(ph => {
       const shortfallText = calcResults.requiredIncome !== null
         ? (ph.shortfall > 0.5 ? `shortfall of ${formatGBP(ph.shortfall)}/yr` + (ph.savingsUsed > 0.5 ? ` (using ${formatGBP(ph.savingsUsed)}/yr of savings)` : '') : 'target met')
         : '';
-      lines.push(`CALCULATED — from age ${ph.startAge}: total household income ${formatGBP(ph.totalIncome)}/yr${shortfallText ? ', ' + shortfallText : ''}`);
+      lines.push(`CALCULATED — from age ${ph.startAge}: total household income ${formatGBP(ph.totalIncome)}/yr NET (${formatGBP(ph.grossIncome)}/yr gross, ${formatGBP(ph.taxDue)}/yr est. Income Tax)${shortfallText ? ', ' + shortfallText : ''}`);
     });
   }
 
@@ -2440,7 +2749,7 @@ function calcResultsToFactLines(calcResults){
 }
 
 // Gathers any answers the person has already given in OTHER modules, so guidance in
-// one area can be informed by what they told Cairn elsewhere, without repeating a
+// one area can be informed by what they told CAS elsewhere, without repeating a
 // field that this module already asks about itself.
 function buildOtherContextLines(currentModule, profile){
   const ownIds = new Set(currentModule.questions.map(q => q.id));
@@ -2477,7 +2786,7 @@ function factLineToBullet(line){
 }
 
 const LOCAL_MODULE_EXPLAINERS = {
-  "forecast": "This forecast combines every pension you've added (of whichever type), each person's State Pension from their own State Pension age, and any savings being used to bridge a gap before all income is flowing — against the annual household income you said you'd like. Figures for defined contribution pots assume balanced (5%/yr) growth, a 25% tax-free lump sum unless you chose to skip it, and the commonly-cited 4% sustainable drawdown rule. A Police Scotland pension, where present, is worked out across its three legal periods: pre-2015 service under the legacy final-salary scheme, 2015–2022 service resolved by the McCloud 'deferred choice underpin', and service from April 2022 under the mandatory 2015 CARE scheme — exact figures, especially the deferred choice underpin outcome, should be confirmed with SPPA via an official Remediable Service Statement. A calculated retirement age, where shown, is the earliest age your own figures suggest the target income is sustainably met — a separate, calculated figure from whatever retirement age you actually entered.",
+  "forecast": "This forecast combines every pension you've added (of whichever type), each person's State Pension from their own State Pension age, and any savings being used to bridge a gap before all income is flowing — against the annual household income you said you'd like. Each individual pension figure in 'Your numbers' above is shown gross, before tax — what that pension itself pays out. The income-vs-target figures are different: they're net, after deducting estimated Scottish Income Tax on each person's own combined taxable income (worked out per person, the way HMRC and Revenue Scotland actually do it), so they're directly comparable to the take-home target you entered. Figures for defined contribution pots assume balanced (5%/yr) growth, a 25% tax-free lump sum unless you chose to skip it (which stays tax-free either way), and the commonly-cited 4% sustainable drawdown rule. A Police Scotland pension, where present, is worked out across its three legal periods: pre-2015 service under the legacy final-salary scheme, 2015–2022 service resolved by the McCloud 'deferred choice underpin', and service from April 2022 under the mandatory 2015 CARE scheme — exact figures, especially the deferred choice underpin outcome, should be confirmed with SPPA via an official Remediable Service Statement. A calculated retirement age, where shown, is the earliest age your own figures suggest the net target income is sustainably met — a separate, calculated figure from whatever retirement age you actually entered.",
   "fact-find": "A pension adviser typically starts by understanding your whole circumstances — your age relative to when you'd like to retire, your employment status, and anything about your health that might affect either how long your money needs to last or the value of guaranteed income options (a shorter life expectancy can sometimes make an annuity less attractive than drawdown, for instance). Your marital status and existing pensions shape what else is worth reviewing: multiple old workplace pensions are often worth tracking down and consolidating (or at least listing) so nothing gets forgotten, and a spouse or civil partner's own pension position usually needs to be considered alongside yours rather than in isolation.",
   "tax-relief": "Scottish taxpayers get pension tax relief slightly differently from the rest of the UK, because Scotland has its own income tax bands. If your contributions go through a 'net pay' or salary sacrifice arrangement, full relief at your marginal rate happens automatically — there's nothing to claim. If instead your contributions are 'relief at source' (common for personal pensions and many workplace schemes), the pension provider only ever adds relief at the UK basic rate of 20% automatically. A Scottish intermediate, higher, advanced, or top-rate taxpayer has to claim the difference back themselves through Self Assessment — it isn't done for you. A Scottish starter-rate taxpayer is the one exception: they keep the extra 20% relief-at-source top-up with no clawback, even though their income tax rate is below 20%. If your income falls between £100,000 and £125,140, you're in the personal allowance taper zone, where you lose £1 of tax-free personal allowance for every £2 earned above £100,000 — pension contributions are a well-known way to reduce your income for this test and soften the effect.",
   "pot-projection": "A pension pot's eventual size depends on three things: how much time it has to grow, how much goes in, and the investment growth achieved along the way. The three scenarios shown (cautious, balanced, optimistic) aren't predictions — they illustrate how sensitive the outcome is to investment performance, which is genuinely uncertain and outside anyone's control. The 25% tax-free lump sum figure is the amount that could typically be taken free of tax when the pension is first accessed, capped against a current illustrative allowance — the rest of the pot, however it's drawn, is normally taxed as income. How much investment risk suits you depends on how long the money has to grow and how you'd feel about the pot's value falling temporarily, which is a personal question rather than one with a single right answer.",
